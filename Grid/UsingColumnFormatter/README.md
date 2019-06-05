@@ -1,4 +1,4 @@
-# UsingColumnFormatter
+# Using IgxColumnComponent Formatter
 The IgxColumnComponent Formatter allows you to format the display of column data by providing custom logic for each column, without modifying the underlying bound data values.
 
 *Note: The IgxColumnComponent Formatter is only used to format data when autogenerating columns in the igx-Grid. If defining columns in HTML, you will use pipes or templates to format your data.*
