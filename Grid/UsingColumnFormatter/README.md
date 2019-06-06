@@ -35,3 +35,6 @@ The IgxColumnComponent Formatter allows you to format the display of column data
     return displayText;
   }
   ```
+  # View on StackBlitz
+
+  [Run this sample on StackBlitz](https://stackblitz.com/github/Infragistics/angular-samples/tree/master/Grid/UsingColumnFormatter)
