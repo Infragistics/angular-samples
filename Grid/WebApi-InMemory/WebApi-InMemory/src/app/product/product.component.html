@@ -1,0 +1,41 @@
+<button igxButton="raised" (click)="dialogAdd.open()" class="addProdBtn">Add New Product</button>
+ <igx-grid #productgrid [data]="products" 
+ [autoGenerate]="false" 
+ [primaryKey]="'id'" 
+ [rowEditable]="true"
+ width="100%"
+ (onRowEditCancel)='rowcancel()'
+ (onRowEdit)='rowedited($event)'
+ height="350px">
+<igx-column [dataType]="'number'" [editable]="false" field="id" header="Id"></igx-column>
+<igx-column [dataType]="'string'" field="Title" header="Title"></igx-column>
+<igx-column [dataType]="'date'" field="ExpiryDate" header="Expiry Date"></igx-column>
+<igx-column [dataType]="'number'" width="400px" field="Price" header="Price"></igx-column>
+<igx-column [dataType]="'number'" field="Rating" header="Rating"></igx-column> 
+<igx-column width="12%" [filterable]="false">
+    <ng-template igxCell let-cell="cell">
+        <button igxButton="icon" (click)="removeProduct(cell.row.rowData.id)">
+            <igx-icon>delete</igx-icon>
+        </button>
+    </ng-template>
+</igx-column>
+</igx-grid> 
+
+<igx-dialog #dialogAdd title="New Product" [rightButtonLabel]="'Add'" [leftButtonLabel]="'Cancel'"
+            (onLeftButtonSelect)="cancel()" (onRightButtonSelect)="addProduct()">
+            <div class="dialogNewRecord">
+                <igx-input-group>
+                    <label igxLabel for="productName">Product Name</label>
+                    <input igxInput id="productName" type="text" [(ngModel)]="product.Title" />
+                </igx-input-group>
+                <igx-input-group>
+                    <label igxLabel for="price">Price</label>
+                    <input igxInput id="price" type="number" [(ngModel)]="product.Price" />
+                </igx-input-group>
+                <igx-date-picker id="expiryDate" label="Expiry Date" [(ngModel)]="product.ExpiryDate"></igx-date-picker>
+                <igx-input-group>
+                    <label igxLabel for="Rating">Rating</label>
+                    <input igxInput id="Rating" [(ngModel)]="product.Rating" />
+                </igx-input-group>
+            </div>
+        </igx-dialog>
