@@ -1,0 +1,18 @@
+
+ <igx-grid [data]="products" [autoGenerate]="false" height="350px" width="960px">
+    <igx-column field="Id" header="Id"></igx-column>
+    <igx-column field="Title" header="Title">
+    </igx-column>
+    <igx-column field="ExpiryDate" header="Expiry Date">
+        <ng-template igxCell let-value>
+            {{ value | date :'fullDate'}}
+        </ng-template>
+    </igx-column>
+    <igx-column [sortable]='true' field="Price" header="Price">
+        <ng-template igxCell let-value>
+            {{ value | currency:'CAD':'symbol':'4.2-2'}}
+        </ng-template>
+    </igx-column>
+    <igx-column field="Rating" header="Rating">
+    </igx-column>
+</igx-grid>
