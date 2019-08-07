@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable} from 'rxjs';
-import { FinancialData } from '../../../../../LocalData/financialData';
+import { FinancialData } from '../../localData/financialData';
 
 @Injectable()
 export class LocalDataService {
