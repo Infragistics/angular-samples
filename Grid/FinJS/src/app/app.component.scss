@@ -1,0 +1,7 @@
+.outer-wrapper {
+  padding: 5px;
+  // Removed because of the issue with dynamic changing of Grid width
+  // display: flex;
+  justify-content: center;
+  height: 100%;
+}
