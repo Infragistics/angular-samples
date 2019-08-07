@@ -2,6 +2,13 @@
 
 The Grid component in Ignite UI for Angular is able to handle thousands of updates per seconds, while keeping the grid responsive for any interaction that the user may undertake. This sample demonstrates the Grid handling thousands of updates per second.
 
+## Components list
+
+- [IgxGrid](https://www.infragistics.com/products/ignite-ui-angular/angular/components/grid/grid.html)
+- [IgxSlider](https://www.infragistics.com/products/ignite-ui-angular/angular/components/slider.html)
+- [IgxButtonGroup](https://www.infragistics.com/products/ignite-ui-angular/angular/components/buttongroup.html), [IgxSwitch](https://www.infragistics.com/products/ignite-ui-angular/angular/components/switch.html), [IgxRipple](https://www.infragistics.com/products/ignite-ui-angular/angular/components/ripple.html), [IgxIcon](https://www.infragistics.com/products/ignite-ui-angular/angular/components/icon.html), [IgxToggle](https://www.infragistics.com/products/ignite-ui-angular/angular/components/toggle.html)
+- [IgxExcelExporterService](https://www.infragistics.com/products/ignite-ui-angular/angular/components/exporter_excel.html), [IgxCsvExporterService](https://www.infragistics.com/products/ignite-ui-angular/angular/components/exporter_csv.html)
+
 ## View on StackBlitz
 
 [Run this sample on StackBlitz](https://stackblitz.com/github/Infragistics/angular-samples/tree/master/Grid/FinJS)
