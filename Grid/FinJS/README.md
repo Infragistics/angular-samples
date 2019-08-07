@@ -1,4 +1,12 @@
-# FinJS
+# FinJS Live Updating Demo
+
+The Grid component in Ignite UI for Angular is able to handle thousands of updates per seconds, while keeping the grid responsive for any interaction that the user may undertake. This sample demonstrates the Grid handling thousands of updates per second.
+
+## View on StackBlitz
+
+[Run this sample on StackBlitz](https://stackblitz.com/github/Infragistics/angular-samples/tree/master/Grid/FinJS)
+
+## Project
 
 This project was generated with [Ignite UI CLI](https://github.com/IgniteUI/igniteui-cli) version 4.2.3.
 
